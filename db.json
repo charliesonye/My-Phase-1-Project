@@ -1,0 +1,55 @@
+
+ {
+
+ "hubs": [
+    {
+        "id": 1,
+        "Image": "https://www.telegraph.co.uk/content/dam/Travel/2017/May/Tbilisi-travel-alamy.jpg",
+        "Country": "Georgia",
+        "City": "Tibillisi",
+        "Lifestyle": "Info"
+
+
+    },
+
+    {
+        "id": 2,
+        "Image": "https://ychef.files.bbci.co.uk/976x549/p093hwwm.jpg",
+        "Country": "Bosnia and Herzegovina",
+        "City": "Sarajevo",
+        "Lifestyle": "Info"
+    
+
+    },
+
+    {
+        "id": 3,
+        "Image": "https://www.urbangreenup.eu/imgpub/1883311/0/0/medellin.jpg",
+        "Country": "Colombia",
+        "City": "Medellin",
+        "Lifestyle": "Info"
+
+
+    },
+
+    {
+        "id": 4,
+        "Image": "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/de/c4/ab.jpg",
+        "Country": "Thailand",
+        "City": "Chiang Mai",
+        "Lifestyle": "Info"
+
+
+    },
+    
+    {
+        "id": 5,
+        "Image": "https://a.cdn-hotels.com/gdcs/production143/d1112/c4fedab1-4041-4db5-9245-97439472cf2c.jpg",
+        "Country": "Indonesia",
+        "City": "Bali",
+        "Lifestyle": "Info"
+
+    }
+
+]
+ }
