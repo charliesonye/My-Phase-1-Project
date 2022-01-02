@@ -24,6 +24,14 @@ img {
 
 }
 
+.like-button {
+    position: relative;
+    transform: rotate(270deg);
+    right: 185px;
+    top: 30px;
+    
+}
+
 
 
 h1 {
@@ -33,4 +41,5 @@ h1 {
 h2 {
     margin-top: -15px;
 }
+
 
