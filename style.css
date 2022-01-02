@@ -27,9 +27,15 @@ img {
 .like-button {
     position: relative;
     transform: rotate(270deg);
-    right: 185px;
-    top: 30px;
+    left: 14px;
+    top: -15px;
     
+}
+
+.delete-button {
+    position:relative;
+    top: 30px;
+    right: 15px;
 }
 
 

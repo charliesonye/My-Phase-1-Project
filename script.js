@@ -15,7 +15,7 @@ const img = document.createElement('img')
 const likeButtton = document.createElement('button')
 const numOfLikes = document.createElement('h3')
 const likesText = document.createElement('h3')
-
+const deleteButton = document.createElement('button')
     
     locationDiv.className = 'hub-card'
     structureDiv.className = "hub-structure"
@@ -26,6 +26,8 @@ const likesText = document.createElement('h3')
     img.src = hub.Image 
     likeButtton.textContent = "<3"
     likeButtton.className = "like-button"
+    deleteButton.textContent = "X"
+    deleteButton.className = "delete-button"
     numOfLikes.textContent = hub.Likes
     numOfLikes.className = "Likes-Counter"
     likesText.textContent = "Hub Likes"
@@ -33,25 +35,24 @@ const likesText = document.createElement('h3')
    
 
 
-imgDiv.append(img, likeButtton, numOfLikes, likesText)
-structureDiv.append(h1,h2,imgDiv)
+imgDiv.append(img)
+structureDiv.append(h1,h2,imgDiv,numOfLikes,likesText, likeButtton, deleteButton)
 locationDiv.append(structureDiv)
 document.querySelector('#hub-container').append(locationDiv)
 
 likeButtton.addEventListener('click', ()=> {likeAHub(hub,numOfLikes)})
+deleteButton.addEventListener('click', ()=> {deleteAHub(locationDiv)})
+
 }
-
-
 
 function likeAHub(hub, numOfLikes) {
-    hub.Likes += 1;
-    numOfLikes.textContent = hub.Likes;
-
-
+     numOfLikes.textContent = hub.Likes += 1;
 }
 
 
-
+function deleteAHub(locationDiv){
+    locationDiv.remove()
+}
 
 
 
