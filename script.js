@@ -63,11 +63,12 @@ locationDiv.addEventListener('mouseenter', (event)=> {
 
 function likeAHub(hub, numOfLikes) {
      numOfLikes.textContent = hub.Likes += 1;
+    //  a second paramater must be used...numOfLikes.textContent += 1 isn't sufficient
 }
 
 function deleteAHub(locationDiv){
-    // locationDiv.remove()
-    locationDiv.textContent = ''
+    locationDiv.remove();
+    // locationDiv.textContent = ''
 }
 
 
