@@ -118,5 +118,6 @@ function fetchAllHubs(){
     // }
     
     // init();
+    // Also ask what purpose does the init function serve with all of this code around
 
 // likeButtton.addEventListener('click', ()=> {likeAHub(numOfLikes)})
