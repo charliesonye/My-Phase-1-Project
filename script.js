@@ -78,6 +78,7 @@ function fetchAllHubs(){
     .then(hubs => (hubs.forEach(renderHub)))
 
 }
+// If I make hubs available in global scope, is that the solution for the createAHub function
 
 
     
