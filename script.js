@@ -54,7 +54,7 @@ document.querySelector('#hub-container').append(locationDiv)
 likeButtton.addEventListener('click', ()=> {likeAHub(hub,numOfLikes)})
 deleteButton.addEventListener('click', ()=> {deleteAHub(locationDiv)})
 locationDiv.addEventListener('mouseenter', (e)=> {
-    if(hub.id % 2 == 0){e.target.style.color = 'green'}else(e.target.style.color = 'red')
+    if(hub.id % 2 == 0){e.target.style.color = 'red'}else(e.target.style.color = 'green')
 })
 
 
