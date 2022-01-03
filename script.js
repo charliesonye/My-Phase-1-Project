@@ -49,6 +49,7 @@ dropdownDiv.append(dropdownDivInfo)
 
 imgDiv.append(img)
 structureDiv.append(h1,h2,imgDiv,numOfLikes,likesText, likeButtton, deleteButton, dropdownDiv)
+    // LocationDiv is essentially my smaller version of a container before it's append to the dom
 locationDiv.append(structureDiv)
 document.querySelector('#hub-container').append(locationDiv)
 
