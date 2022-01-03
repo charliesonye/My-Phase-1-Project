@@ -30,12 +30,14 @@ img {
     transform: rotate(270deg);
     left: 35px;
     top: -80px;
+    color: red;
+    border-color: black;
     
 }
 
 .delete-button {
     position:relative;
-    
+    border-color: black;
     right: -30px;
 }
 
