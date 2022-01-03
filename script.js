@@ -81,30 +81,31 @@ function fetchAllHubs(){
     
 
 
-function createAHub(e){
-        e.preventDefault()
+// function createAHub(e){
+//         e.preventDefault()
         
     
-        let hubCountry = document.querySelector('#Country').value
-        let hubCity = document.querySelector('#City')
-        let hubImg = document.querySelector('#new-Image').value
-        let hubDescription = document.querySelector('#new-Description').value
+//         let hubCountry = document.querySelector('#Country').value
+//         let hubCity = document.querySelector('#City').value
+//         let hubImg = document.querySelector('#new-Image').value
+//         let hubDescription = document.querySelector('#new-Description').value
         
-      let newHub = {
-    
-          Country: hubCountry,
-          City: hubCity,
-          Image: hubImg,
-          Description: hubDescription,
-      }
-    
-      hubs.push(newHub);
-      renderHub(newHub)
+//       let newHub = {
         
-    }
+          
+//           Country: hubCountry,
+//           City: hubCity,
+//           Image: hubImg,
+//           Description: hubDescription,
+//       }
     
-    let hubForm = document.querySelector("form")
-    hubForm.addEventListener('submit', createAHub)
+//       hub.push(newHub);
+//       renderHub(newHub)
+        
+//     }
+    
+//     let hubForm = document.querySelector("form")
+//     hubForm.addEventListener('submit', createAHub)
     
     // function init(){
     //     hubs.forEach(renderHub)
