@@ -21,31 +21,57 @@ img {
     width: 300px;
     box-shadow:5px 5px 5px grey;
     margin-bottom: -5px;
+    left: 15px;
 
 }
 
 .like-button {
     position: relative;
     transform: rotate(270deg);
-    left: 14px;
-    top: -15px;
+    left: 35px;
+    top: -80px;
     
 }
 
 .delete-button {
     position:relative;
-    top: 30px;
-    right: 15px;
+    
+    right: -30px;
 }
 
 
 
 h1 {
     margin-top: 0%;
+    text-align: center;
 }
 
 h2 {
     margin-top: -15px;
 }
 
+form {
+    text-align: center;
+    position: relative;
+    bottom: 20%;
+}
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 120px;
+  }
+  
+  .dropdown-info {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    height: 200px;
+    width: 400px;
+    box-shadow: 5px 5px 5px grey;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-info {
+    display: block;
+  }
