@@ -42,10 +42,11 @@ const deleteButton = document.createElement('button')
     likesText.className = "Hub-Likes"
    
    
-
+    // These elements are important for the hover feature inside of description
 dropdownDiv.append(dropdownSpan)
 dropdownDivInfo.append(infoInDropdown)
 dropdownDiv.append(dropdownDivInfo)
+
 imgDiv.append(img)
 structureDiv.append(h1,h2,imgDiv,numOfLikes,likesText, likeButtton, deleteButton, dropdownDiv)
 locationDiv.append(structureDiv)
