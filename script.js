@@ -66,7 +66,8 @@ function likeAHub(hub, numOfLikes) {
 }
 
 function deleteAHub(locationDiv){
-    locationDiv.remove()
+    // locationDiv.remove()
+    locationDiv.textContent = ''
 }
 
 
