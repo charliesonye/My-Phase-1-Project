@@ -82,7 +82,7 @@ function fetchAllHubs(){
 
     
 
-
+// Ask for assistance with submitting
 // function createAHub(e){
 //         e.preventDefault()
         
