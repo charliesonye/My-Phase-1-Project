@@ -61,8 +61,11 @@ form {
 
 .dropdown {
     position: relative;
+    border-radius: 5px;
     display: inline-block;
     left: 120px;
+    background-color: lightgray;
+    outline: black;
   }
   
   .dropdown-info {
