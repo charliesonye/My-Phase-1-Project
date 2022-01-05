@@ -85,6 +85,7 @@ function likeAHub(hub, numOfLikes) {
 }
 
 The callback function for the delete function only required for the initial container to passed through as an argument and for the remove() method to be applied it within the block of code.
+![Screen Shot 2022-01-05 at 3 38 37 PM](https://user-images.githubusercontent.com/90803892/148285964-90204f17-18d3-4f0a-a024-71582d8c0de2.png)
 
 ```jsx
 likeButtton.addEventListener('click', ()=> {likeAHub(hub,numOfLikes)})
