@@ -16,18 +16,7 @@ Creating our JSON File:
 
 First we start off by creating an object that will operate as our server. This object will have a variable that saves this information within an array of objects and with 5 sets of 6 key-value pairs in total.
 
-{
-
- "hubs": [
-    {
-        "id": 1,
-        "Image": "https://www.telegraph.co.uk/content/dam/Travel/2017/May/Tbilisi-travel-alamy.jpg",
-        "Country": "Georgia",
-        "City": "Tibillisi",
-        "Description": "Info",
-        "Likes": 0
-
-    },
+![Screen Shot 2022-01-05 at 3 25 49 PM](https://user-images.githubusercontent.com/90803892/148284294-ca684a67-419f-4923-93cb-eca87126d36a.png)
 
 Fetching Our Information:
 
@@ -37,17 +26,12 @@ json-server --watch db.json
 
 We should receive a resources link in our terminal which we can use for our fetch to access the data in the db.json file. 
 
-**Resources**
-
-http://localhost:3000/hubs
-
-**Home**
-
-http://localhost:3000
+![Screen Shot 2022-01-05 at 3 27 36 PM](https://user-images.githubusercontent.com/90803892/148284498-91572e7f-c771-4599-bd08-3f03d4ca264c.png)
 
 *Confirm that your resource link works by entering it in your browser and seeing the data rendered
 
 Run a fetch followed by the .then method which provides a promise for you receive a response in the form of a Json-formatted version of the stored data. We must then use the same method once more to re-format the data once more so that we can use it for rendering features in our application.
+![Screen Shot 2022-01-05 at 3 29 09 PM](https://user-images.githubusercontent.com/90803892/148284724-b3c77827-b20e-4832-857a-313127c8f8df.png)
 
 fetch(" http://localhost:3000/hubs")
     .then(res => res.json())
