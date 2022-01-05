@@ -3,7 +3,14 @@
 
 There has been a recent change in how and more importantly, where professionals work. This project aims to serve these remote-workers that have the flexibility to choose where they would like to live and work.
 
-When the application is fully functional, users will be able to see a list of 5  locations for digitial nomads which are described as hubs. Users will be able to view these locations and choose their favorite of the 5 by giving their location of choice a like. They will also be able to learn about these locations.
+When the application is fully functional, users will be able to see a list of 5  locations for digitial nomads which are described as hubs. Users will be able to view these locations and choose their favorite of the 5 by clicking the like button on their location of choice . They will also be able to learn about these locations.
+
+Html:
+To create this application we started off by giving the page a title with the use of the h1 tag. Hard-coding within html was limited so that was one of 3 tags used to complete this project.
+
+![Screen Shot 2022-01-05 at 3 22 27 PM](https://user-images.githubusercontent.com/90803892/148283892-bdb806b8-0d9d-4190-b083-598d8bfd2eaf.png)
+
+![Screen Shot 2022-01-05 at 3 21 43 PM](https://user-images.githubusercontent.com/90803892/148283809-c1a92197-b210-4297-9321-23c5c2e4195d.png)
 
 Creating our JSON File:
 
@@ -28,7 +35,7 @@ Now to use the information in our database, we need to run a fetch by running th
 
 json-server --watch db.json
 
-We should receive a resources link which we can for our fetch to access the data in the db.json file. 
+We should receive a resources link in our terminal which we can use for our fetch to access the data in the db.json file. 
 
 **Resources**
 
@@ -61,14 +68,21 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchAllHubs()
 })
 
-The next step is to render these hubs. 
 
-Use the data to create and renderHub() function to create each element that should be displayed in association with each Hub and assign class names for styling . Our LocationDiv variable will serve as a container so after all the data from the db.json file is appended then it needs to be appended to the body of the html document where the parent container resides. This element is grab in order to make this possible.
 
-```jsx
+
+
+Use the data we've received by passing our data through the renderHub() function to create each element that should be displayed in association with each Hub and assign class names for styling.
+
+Even before the CSS code has been applied, each element should be able to see each country, city, image of location, description and a like button on the page.
+![Screen Shot 2022-01-05 at 3 11 28 PM](https://user-images.githubusercontent.com/90803892/148282557-a68a8f26-6540-4595-a855-cb9043b0625d.png)
+
+We won't be able to see these elements on our without a couple more steps.
+Our LocationDiv variable will serve as a container so after all the data from the db.json file is appended there then it needs to be appended to the body of the html document where the parent container resides. This element was hard-coded in my html file and was grabbed in order to append LocationDiv within it.
+
+
 LocationDiv.append(structureDiv)
 document.querySelector('#hub-container').append(locationDiv)
-```
 
 Event Listeners:
 
