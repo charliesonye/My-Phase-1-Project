@@ -31,11 +31,8 @@ We should receive a resources link in our terminal which we can use for our fetc
 *Confirm that your resource link works by entering it in your browser and seeing the data rendered
 
 Run a fetch followed by the .then method which provides a promise for you receive a response in the form of a Json-formatted version of the stored data. We must then use the same method once more to re-format the data once more so that we can use it for rendering features in our application.
-![Screen Shot 2022-01-05 at 3 29 09 PM](https://user-images.githubusercontent.com/90803892/148284724-b3c77827-b20e-4832-857a-313127c8f8df.png)
 
-fetch(" http://localhost:3000/hubs")
-    .then(res => res.json())
-    .then(data => console.log(data))
+![Screen Shot 2022-01-05 at 3 29 09 PM](https://user-images.githubusercontent.com/90803892/148284724-b3c77827-b20e-4832-857a-313127c8f8df.png)
 
     *A good practice is to log the data being returned to make sure you’re receiving the right data
 
@@ -56,10 +53,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-Use the data we've received by passing our data through the renderHub() function to create each element that should be displayed in association with each Hub and assign class names for styling.
+Use the data we've received by passing our data through the renderHub() function to create each element that should be displayed in association with each Hub.
+
+![Screen Shot 2022-01-05 at 3 32 21 PM](https://user-images.githubusercontent.com/90803892/148285148-733f075a-23ef-42b9-bfbb-463e95ecd5d4.png)
+
 
 Even before the CSS code has been applied, each element should be able to see each country, city, image of location, description and a like button on the page.
+
 ![Screen Shot 2022-01-05 at 3 11 28 PM](https://user-images.githubusercontent.com/90803892/148282557-a68a8f26-6540-4595-a855-cb9043b0625d.png)
+
+Once our Css styling is applied then we want our containers to be structured for users to see everything about the location, which will look similar to the image below.
+
+![Screen Shot 2022-01-05 at 3 36 08 PM](https://user-images.githubusercontent.com/90803892/148285622-6bceace5-a45a-4556-a4eb-e11424c2bba6.png)
+
 
 We won't be able to see these elements on our without a couple more steps.
 Our LocationDiv variable will serve as a container so after all the data from the db.json file is appended there then it needs to be appended to the body of the html document where the parent container resides. This element was hard-coded in my html file and was grabbed in order to append LocationDiv within it.
